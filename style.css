@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+  box-sizing: border-box;
+  font-family: "General Sans";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#minicircle{
+    background-color:white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+
+}
+
+.bounding{
+    width: fit-content;  
+    /* background-color: red; */
+    overflow: hidden;
+}
+.boundingelem{
+    transform: translateY(110%);
+}
+
+#main{
+    width: 100%;
+    background-color: black;
+
+}
+
+#main #hero{
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#hero .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 78px;
+    display: flex;
+    border-bottom: 1px sponolid white;
+
+    color: white;
+}
+#hero .nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#heading{
+    margin: 80px 0px 0px;
+    padding: 0 24px 24px;
+}
+#heading h1{
+    /* font-family: "General Sans Medium"; */
+    font-weight: 900;
+    margin-left: 30px;
+    opacity: .7;
+    line-height: 1;
+     font-size: 9vw;
+    text-transform:uppercase;
+   
+}
+#heading #secondh1{
+    margin-left: 12vw;
+}
+
+.blocktext{
+
+    width: fit-content;
+    /* background-color:red; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.blocktext h5{
+    
+    /* background-color: yellow; */
+    
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: right !important;
+
+}
+
+#hero #smallHeading{
+    display: flex;
+   
+    flex-direction: column;
+    align-items: end;
+    /* background-color: red; */
+    margin-top: 90px;
+    padding-right: 30px;
+}
+#hero #smallHeading h5{
+    
+    
+    
+    font-size: 1vw;
+    margin-top: .5vw;
+    text-align: right !important;
+    text-transform: uppercase;
+    
+}
+
+#heroFooter{
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+        display: flex;
+    justify-content: space-between;
+}
+#heroFooter a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+#heroFooter #icon{
+    display: flex;
+    gap:1vw;
+
+}
+
+#icon .class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background-color: #888;
+    border-radius: 50%;
+
+}
+
+
+#second{
+    color: white;
+    padding-top:10vw;
+    padding-left: 3vw;
+    padding-right: 10vw;
+    padding-bottom: 2vw;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: black;
+}
+
+#second .elem{
+    position: relative;
+    padding:3vw 3vw ;
+    width: 100%;
+    border-top: 1px solid #888;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+}
+#second .elem h1{
+    text-transform: uppercase;
+ font-size: 6vw;
+ opacity: .7;
+}
+#second .elemlast{
+    
+    border-bottom: 1px solid #888;
+    
+}
+
+.elem img{
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+    
+    
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    background-color: black;
+    padding: 10vw 10vw;
+    padding-left: 35vw;
+    color: white;
+    gap:50px;
+}
+#about img{
+    width: 250px;
+}
+
+#textabout{
+    width: 25rem;
+/* background-color: red; */
+}
+#textabout h5{
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+#textabout p{
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+#textabout a{
+    color: white;
+    padding: 10px 32px;
+    border: 1px solid white;
+    border-radius: 50px;
+    /* font-size: 12px; */
+    text-decoration: none;
+}
+
+#subscribe{
+    
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    padding-bottom: 7vw;
+}
+#subscribe h5{
+    text-transform: uppercase;
+    opacity: .6;
+}
+
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#footer{
+    padding: 20px 30px ;
+    color: #fff;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footerleft{
+    display: flex;
+    gap:20px;
+}
+
+#footerright{
+    display: flex;
+    gap:30px;
+}
+#footerright a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
